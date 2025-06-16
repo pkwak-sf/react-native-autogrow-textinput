@@ -52,7 +52,6 @@ public class AutoGrowTextInputModule extends ReactContextBaseJavaModule {
                 if (param.hasKey("maxHeight") && !param.isNull("maxHeight")) {
                     mMaxHeight = dpToPx(param.getDouble("maxHeight"));
                 }
-                editText.setBlurOnSubmit(false);
                 editText.setOnTouchListener(new View.OnTouchListener() {
                     @Override
                     public boolean onTouch(View v, MotionEvent event) {
